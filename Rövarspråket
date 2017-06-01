@@ -1,35 +1,47 @@
 using System;
 
 
-
 namespace Swedish
   {
     class HouseMafia
     {
       static char[] vowels = new char[] { 'A', 'E', 'I', 'O', 'U', 'Y', 'Å', 'Ä', 'Ö' };
       
-      static void Menu(string[] args)
+      static void Main()
       {
         string choice = "";
-            
+        string output = "";    
       Console.WriteLine("Select an option:");
-          Console.WriteLine("   1) Decode from Rovarspraket");
-          Console.WriteLine("   2) Encode from Rovarspraket");
-          Console.WriteLine("   3) Exit");
-          menuOption = Console.ReadLine();
+          Console.WriteLine("   0) Decode from Rovarspraket");
+          Console.WriteLine("   1) Encode from Rovarspraket");
           
-          if choice = 3
-          end;
-          
-          if choice = 1
+         choice = Console.ReadLine();
+                   
+          if (choice == "1")
           {
             Console.Write("Input the string you want to decode: ");
             string input = Console.ReadLine();
             Console.WriteLine("");
+            foreach (char letter in input)
+            {
+              if (vowels[].Contains(letter))
+              {
+                output += letter;
+              }
+              else
+              {
+                output += letter + "o" + letter.Tolower(); 
+              }
+            }
+           
           }
-          elseif choice = 2
+          else if (choice == "0")
           {
             Console.Write("Input the string you want to encode: ");
             string input = Console.ReadLine();
             Console.WriteLine("");
           }
+          
+      }
+    }
+  }
