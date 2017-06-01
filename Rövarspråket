@@ -12,7 +12,7 @@ namespace Swedish
         string choice = "";
         string output = "";    
       Console.WriteLine("Select an option:");
-          Console.WriteLine("   0) Decode from Rovarspraket");
+          Console.WriteLine("   0) Decode to Rovarspraket");
           Console.WriteLine("   1) Encode from Rovarspraket");
           
          choice = Console.ReadLine();
